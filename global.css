@@ -81,7 +81,7 @@ html {
   width: 100%;
   overflow-x: hidden; }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) and (max-device-width: 700px) {
   body {
     width: 100%; }
 
