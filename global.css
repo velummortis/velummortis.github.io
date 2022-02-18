@@ -1,5 +1,85 @@
-body{
-    width:50%;
-    margin-left:auto;
-    margin-right:auto;
-}
+body {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify; }
+  body .article h1 {
+    text-align: center; }
+  body .article p {
+    text-indent: 2em; }
+
+.header {
+  width: 100%;
+  background-image: linear-gradient(indigo 0%, purple 100%);
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  align-content: center; }
+  .header .nav-bar {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; }
+  .header a.nav-bar-item:hover {
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 10px;
+    color: linear-gradient(indigo 0%, purple 100%); }
+  .header a.nav-bar-item {
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 100%;
+    padding: 20px; }
+  .header .nav-bar-title {
+    width: 150px;
+    height: 50px;
+    align-self: center; }
+  .header .search-bar {
+    text-align: right;
+    width: auto;
+    display: inline-block; }
+    .header .search-bar form {
+      width: 300px;
+      margin-top: 10px; }
+      .header .search-bar form textarea {
+        width: 150px;
+        height: 1.5em;
+        font-family: Verdana, sans-serif;
+        font-style: italic;
+        resize: none; }
+      .header .search-bar form button {
+        width: 1.5em;
+        height: 1.5em; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+@media (max-width: 1500px) {
+  body {
+    width: 100%; }
+    body article h1 {
+      text-align: center; }
+
+  .nav-bar-title {
+    width: 100%; }
+
+  p, h1 {
+    padding-left: 1em;
+    padding-right: 1em; } }
+@media (max-width: 700px) {
+  body {
+    width: 100%; }
+
+  .nav-bar-item {
+    width: 100%; }
+
+  .nav-bar-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; } }
+
+/*# sourceMappingURL=global.css.map */
