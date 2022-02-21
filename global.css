@@ -61,32 +61,31 @@ body {
           visibility: hidden;
           position: absolute; }
   body .content {
-    width: 95%;
-    margin-left: 20px;
-    margin-right: 20px; }
+    width: 100%; }
     body .content .content_container {
       background: rgba(255, 255, 255, 0.3);
-      box-shadow: 3em; }
+      box-shadow: grey; }
       body .content .content_container article {
-        width: 100%; }
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%; }
         body .content .content_container article .article_img {
-          width: 500px;
-          text-align: center; }
+          width: 100%;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto; }
           body .content .content_container article .article_img img {
-            margin-left: auto;
-            margin-right: auto;
             width: 55%;
             border: solid 2px black;
-            border-radius: 3px; }
+            border-radius: 3px;
+            max-width: 500px; }
   body .footer {
     background-color: black;
-    height: 15em;
-    margin-top: 1vh; }
+    height: 10em;
+    /*margin-top: 1vh;*/ }
 
 html {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden; }
+  position: fixed; }
 
 h1 {
   text-align: center; }
@@ -94,23 +93,23 @@ h1 {
 p {
   text-indent: 2em; }
 
-@media (max-width: 700px) and (max-device-width: 700px) {
+@media (max-width: 700px), (max-device-width: 700px) {
   body {
     width: 100%; }
 
-  .header .nav-bar {
+  .header div.nav-bar {
     display: block;
     width: 100%; }
-  .header a.nav-bar-item:hover {
-    background-color: rgba(255, 255, 255, 0.849);
-    border-radius: 0;
-    color: indigo;
-    text-decoration: none; }
-  .header a.nav-bar-item {
-    width: 100%;
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0; }
+    .header div.nav-bar a.nav-bar-item:hover {
+      background-color: rgba(255, 255, 255, 0.849);
+      border-radius: 0;
+      color: indigo;
+      text-decoration: none; }
+    .header div.nav-bar a.nav-bar-item {
+      width: 100%;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0; }
   .header .search-bar form input {
     padding-left: 0;
     padding-right: 0; }
@@ -119,6 +118,9 @@ p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em; } }
+    margin-top: 2em; }
+
+  .margin {
+    padding: 2em; } }
 
 /*# sourceMappingURL=global.css.map */
