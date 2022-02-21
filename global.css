@@ -3,83 +3,96 @@ body {
   margin-right: auto;
   margin-top: 0;
   text-align: justify; }
+  body .header {
+    width: 100%;
+    background-image: linear-gradient(indigo 0%, purple 100%);
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    align-content: center; }
+    body .header .nav-bar {
+      width: auto;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center; }
+    body .header a.nav-bar-item:hover {
+      /*background-color:rgba(255, 255, 255, 0.849);*/
+      border-radius: 10px;
+      /*color:$nav-background;*/
+      text-decoration: underline solid 3px rgba(255, 255, 255, 0.849); }
+    body .header a.nav-bar-item {
+      color: rgba(255, 255, 255, 0.849);
+      font-weight: bold;
+      font-family: Verdana, sans-serif;
+      position: relative;
+      display: inline-block;
+      width: auto;
+      height: 100%;
+      padding: 20px;
+      text-decoration: none; }
+    body .header .nav-bar-title {
+      margin-left: 2em;
+      width: 150px;
+      height: 50px;
+      align-self: center;
+      font-family: "Bahnschrift", serif; }
+      body .header .nav-bar-title a {
+        text-decoration: none;
+        color: inherit; }
+    body .header .search-bar {
+      text-align: right;
+      width: 100%;
+      display: inline-block; }
+      body .header .search-bar form {
+        width: 100%;
+        margin-top: 10px; }
+        body .header .search-bar form input {
+          border: 0;
+          color: white;
+          background-color: grey;
+          width: 100%;
+          height: 2.5em;
+          font-family: Verdana, sans-serif;
+          font-style: italic;
+          resize: none;
+          text-indent: 1em; }
+        body .header .search-bar form button {
+          visibility: hidden;
+          position: absolute; }
   body .content {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto; }
-    body .content .article {
-      width: 100%; }
-      body .content .article h1 {
-        text-align: center; }
-      body .content .article p {
-        text-indent: 2em; }
+    width: 95%;
+    margin-left: 20px;
+    margin-right: 20px; }
+    body .content .content_container {
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 3em; }
+      body .content .content_container article {
+        width: 100%; }
+        body .content .content_container article .article_img {
+          width: 500px;
+          text-align: center; }
+          body .content .content_container article .article_img img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 55%;
+            border: solid 2px black;
+            border-radius: 3px; }
   body .footer {
     background-color: black;
     height: 15em;
     margin-top: 1vh; }
 
-.header {
-  width: 100%;
-  background-image: linear-gradient(indigo 0%, purple 100%);
-  display: flex;
-  margin: 0;
-  flex-wrap: wrap;
-  align-content: center; }
-  .header .nav-bar {
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center; }
-  .header a.nav-bar-item:hover {
-    /*background-color:rgba(255, 255, 255, 0.849);*/
-    border-radius: 10px;
-    /*color:$nav-background;*/
-    text-decoration: underline solid 3px rgba(255, 255, 255, 0.849); }
-  .header a.nav-bar-item {
-    color: rgba(255, 255, 255, 0.849);
-    font-weight: bold;
-    font-family: Verdana, sans-serif;
-    position: relative;
-    display: inline-block;
-    width: auto;
-    height: 100%;
-    padding: 20px;
-    text-decoration: none; }
-  .header .nav-bar-title {
-    margin-left: 2em;
-    width: 150px;
-    height: 50px;
-    align-self: center;
-    font-family: 'Bahnschrift',serif; }
-    .header .nav-bar-title a {
-      text-decoration: none;
-      color: inherit; }
-  .header .search-bar {
-    text-align: right;
-    width: 100%;
-    display: inline-block; }
-    .header .search-bar form {
-      width: 100%;
-      margin-top: 10px; }
-      .header .search-bar form input {
-        border: 0;
-        color: white;
-        background-color: grey;
-        width: 100%;
-        height: 2.5em;
-        font-family: Verdana, sans-serif;
-        font-style: italic;
-        resize: none;
-        text-indent: 1em; }
-      .header .search-bar form button {
-        visibility: hidden;
-        position: absolute; }
-
 html {
   height: 100%;
   width: 100%;
   overflow-x: hidden; }
+
+h1 {
+  text-align: center; }
+
+p {
+  text-indent: 2em; }
 
 @media (max-width: 700px) and (max-device-width: 700px) {
   body {
